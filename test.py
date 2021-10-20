@@ -1,6 +1,7 @@
 import streamlit as st
 from webcam import webcam
 from io import BytesIO
+import base64 
 
 def get_image_download_link(img,filename,text):
 	img = img.convert('RGB')
