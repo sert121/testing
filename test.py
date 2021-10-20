@@ -1,5 +1,6 @@
 import streamlit as st
 from webcam import webcam
+from io import BytesIO
 
 captured_image = webcam()
 
