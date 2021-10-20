@@ -7,3 +7,6 @@ if captured_image is None:
 else:
     st.write("Got an image from the webcam:")
     st.image(captured_image)
+
+st.download(data=captured_image,filename="default.png")
+
