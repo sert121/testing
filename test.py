@@ -22,7 +22,7 @@ else:
 	# st.write(type(captured_image))
 	st.image(captured_image)
 	# link = get_image_download_link(captured_image,"default",)
-	st.markdown(get_image_download_link(captured_image,"capt_img",'Download img'), unsafe_allow_html=True)
+	st.markdown(get_image_download_link(captured_image,"capt_img.png",'Download img'), unsafe_allow_html=True)
 
 	# st.download_button(label="Download image",data=captured_image,file_name="default.png")
 
