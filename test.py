@@ -8,5 +8,5 @@ else:
     st.write("Got an image from the webcam:")
     st.image(captured_image)
 
-st.download_button(data=captured_image,filename="default.png")
+st.download_button(data=captured_image,file_name="default.png")
 
