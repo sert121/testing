@@ -5,6 +5,7 @@ from io import BytesIO
 captured_image = webcam()
 
 def get_image_download_link(img,filename,text):
+	img = img.convert('RGB')
     buffered = BytesIO()
     img.save(buffered, format="JPEG")
     img_str = base64.b64encode(buffered.getvalue()).decode()
